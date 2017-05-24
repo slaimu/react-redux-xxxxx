@@ -30,7 +30,7 @@ class App extends React.Component {
   componentDidMount() {
     let value = LocalStorage.getItem(CITYNAME);
     if (!value) {
-      value = 'unKnown';
+      value = '北京';
     }
     this.props.userInfoActions.update({
       cityName:value
