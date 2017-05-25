@@ -13,7 +13,9 @@ class HomeHeader extends React.Component {
     return (
       <nav className='nav home-header'>
         <div className='left home-header-left'>
-         <span>{this.props.cityName}</span>
+          <a href='/#City'>
+           <span>{this.props.cityName}</span>
+          </a>
          <i className='icon-angle-down'></i>
         </div>
         <div className='right home-header-right'>

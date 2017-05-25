@@ -6,7 +6,7 @@ import {Router, Route, IndexRoute} from 'react-router'
 import App from '../containers'
 import Home from '../containers/Home'
 import NotFound from '../containers/404'
-
+import City from '../containers/City'
 
 
 class RouteMap extends React.Component {
@@ -16,6 +16,7 @@ class RouteMap extends React.Component {
         <Route path='/' component={App}>
           <IndexRoute component={Home}>
           </IndexRoute>
+          <Route path='/City' component={City}></Route>
           <Route path='*' component={NotFound}></Route>
         </Route>
 
