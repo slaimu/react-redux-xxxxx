@@ -1,6 +1,10 @@
 import * as actionTypes from '../constants/userInfo'
+import {CITYNAME} from '../config/localStorageKey'
+import LocalStorage from '../util/localStorage'
 
-const initialState = {}
+const initialState = {
+  CITYNAME: LocalStorage.getItem(CITYNAME)
+}
 
 export default function userInfo(state=initialState, action) {
   switch(action.type) {
