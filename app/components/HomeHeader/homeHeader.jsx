@@ -1,12 +1,11 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-
+import SearchInput from '../SearchInput'
 
 class HomeHeader extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-
   }
 
   render() {
@@ -21,17 +20,10 @@ class HomeHeader extends React.Component {
         <div className='right home-header-right'>
           <i className='icon-user'></i>
         </div>
-        <div className='home-header-middle'>
-          <div className='search-container'>
-            <i className='icon-search'></i>
-            <input type='text' placeholder='search......' />
-          </div>
-        </div>
+          <SearchInput value = ""/>
       </nav>
     )
   }
-
-
 
 }
 
