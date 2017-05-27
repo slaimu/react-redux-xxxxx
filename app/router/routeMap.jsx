@@ -8,7 +8,7 @@ import Home from '../containers/Home'
 import NotFound from '../containers/404'
 import City from '../containers/City'
 import Search from '../containers/Search'
-
+import Detail from '../containers/Detail'
 
 
 class RouteMap extends React.Component {
@@ -20,6 +20,7 @@ class RouteMap extends React.Component {
           </IndexRoute>
           <Route path='/City' component={City}></Route>
           <Route path='/Search/:category(/:keywords)' component={Search}></Route>
+          <Route path='/Detail/:id' component={Detail}></Route>
           <Route path='*' component={NotFound}></Route>
         </Route>
 
