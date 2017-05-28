@@ -1,6 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import SearchInput from '../SearchInput'
+import {Link} from 'react-router'
 
 class HomeHeader extends React.Component {
   constructor(props, context) {
@@ -18,7 +19,9 @@ class HomeHeader extends React.Component {
          <i className='icon-angle-down'></i>
         </div>
         <div className='right home-header-right'>
-          <i className='icon-user'></i>
+          <Link to='/Login'>
+            <i className='icon-user'></i>
+          </Link>
         </div>
           <SearchInput value = ""/>
       </nav>

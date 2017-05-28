@@ -9,7 +9,7 @@ import NotFound from '../containers/404'
 import City from '../containers/City'
 import Search from '../containers/Search'
 import Detail from '../containers/Detail'
-
+import Login from '../containers/Login'
 
 class RouteMap extends React.Component {
   render() {
@@ -21,6 +21,7 @@ class RouteMap extends React.Component {
           <Route path='/City' component={City}></Route>
           <Route path='/Search/:category(/:keywords)' component={Search}></Route>
           <Route path='/Detail/:id' component={Detail}></Route>
+          <Route path='/Login' component={Login}></Route>
           <Route path='*' component={NotFound}></Route>
         </Route>
 
